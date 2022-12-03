@@ -16,11 +16,11 @@
 
 ## configuration de la bdd :
 - creer un .env.local avec :
-### DATABASE_URL="mysql://root:@db_dev_docker:3306/api?serverVersion=8&charset=utf8mb4"
+#### DATABASE_URL="mysql://root:@db_dev_docker:3306/api?serverVersion=8&charset=utf8mb4"
 puis dans le terminal
-- php bin/console d:d:c
-- php bin/console d:m:m
-- php bin/console d:f:l
+- php bin/console doctrine:database:create
+- php bin/console doctrine:migration:migrate
+- php bin/console doctrine:fixture:load
 
 Ensuite :
 - Api accessible sur localhost:8000/api
