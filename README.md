@@ -7,7 +7,7 @@
  - docker-compose up -d
 
 ## une fois les container creer :
- - docker exec -ti www_api_project
+ - docker exec -ti www_api_project bash
  - cd api_project
 
 ## itinialisation des dependances :
